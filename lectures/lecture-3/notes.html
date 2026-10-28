@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>שיעור 3 | מבוא לחשבונאות פיננסית | סיכום</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<style>
+:root{--ink:#16213a;--ink2:#2a3858;--mut:#5d6a86;--paper:#f6f2ea;--line:#e4dccd;--coral:#ff6a4d;--navy:#0f1b33;--navy2:#1b2d55;--asset:#0f9d90}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Heebo','Segoe UI','Arial Hebrew',Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.n{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.top{background:radial-gradient(1000px 500px at 80% 0%,#27447f 0%,var(--navy) 60%,#08101f 100%);color:#fff;padding:34px 0 40px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+.back{display:inline-block;color:#7fe3d6;font-weight:700;text-decoration:none;font-size:15px;margin-bottom:14px}
+.back:hover{text-decoration:underline}
+.kick{color:#7fe3d6;font-weight:700;font-size:15px}
+h1{font-size:clamp(26px,4.4vw,38px);line-height:1.25;font-weight:800;margin-top:6px}
+.toc{background:#fff;border-radius:16px;padding:18px 24px;margin:-22px 0 8px;box-shadow:0 8px 28px rgba(22,33,58,.1);position:relative}
+.toc b{color:var(--navy2)}
+.toc ol{padding-right:22px;columns:2;column-gap:30px;margin-top:6px}
+.toc a{text-decoration:none;color:var(--ink2)}
+.toc a:hover{color:var(--coral)}
+section{margin-top:34px}
+h2{font-size:26px;font-weight:800;color:var(--navy2);padding-bottom:6px;border-bottom:4px solid var(--coral);margin-bottom:14px;display:flex;gap:12px;align-items:center}
+h2 .sn{flex:none;width:36px;height:36px;border-radius:50%;background:var(--navy2);color:#fff;display:grid;place-items:center;font-size:18px}
+h3{font-size:19px;font-weight:800;color:var(--navy2);margin:20px 0 8px}
+p{margin:0 0 10px}
+.tw{overflow-x:auto;margin:8px 0 14px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:16px}
+th{background:var(--navy2);color:#fff;text-align:right;padding:9px 12px;font-weight:700}
+td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:right}
+tbody tr:nth-child(even) td{background:#faf7f1}
+table.num td:nth-child(n+2){text-align:left}
+tr.tot td{background:var(--navy2)!important;color:#fff;font-weight:700}
+.term{background:#fff;border-radius:14px;padding:12px 18px;margin:0 0 12px;border-right:6px solid var(--coral);box-shadow:0 2px 0 var(--line)}
+.term .th{font-weight:800;color:var(--navy2);font-size:18px;margin-bottom:2px}
+.term p{margin:0 0 4px;font-size:16px}
+.note{background:#fff7e0;border-right:5px solid #f0b429;border-radius:10px;padding:10px 16px;margin:12px 0}
+.eq{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin:14px 0}
+.eb{padding:6px 14px;border-radius:10px;font-weight:800}
+.eb.a{background:#dff5f2;color:#087469}.eb.l{background:#ece8ff;color:#4f33c9}.eb.q{background:#fff0d2;color:#a86703}.eb.i{background:#dcf5e6;color:#167a43}.eb.x{background:#fde3e5;color:#b3262f}
+.eo{font-weight:800;font-size:20px}
+.chip{display:inline-block;border-radius:99px;padding:1px 12px;font-weight:700;font-size:14px}
+.chip.c-a{background:#dff5f2;color:#087469}.chip.c-l{background:#ece8ff;color:#4f33c9}.chip.c-q{background:#fff0d2;color:#a86703}.chip.c-i{background:#dcf5e6;color:#167a43}.chip.c-x{background:#fde3e5;color:#b3262f}
+ul.rules{padding-right:22px}ul.rules li{margin-bottom:6px}
+ol.five{padding-right:26px;font-size:18px;line-height:1.9}
+details{background:#fff;border-radius:12px;padding:10px 16px;margin:10px 0;border:1px solid var(--line)}
+summary{cursor:pointer;font-weight:800;color:var(--navy2)}
+details[open] summary{margin-bottom:8px}
+footer{margin:46px 0 30px;color:var(--mut);font-size:14px;text-align:center}
+@media print{.top{background:#fff!important;color:#000}.back,.toc{display:none}section{break-inside:avoid-page}}
+@media (max-width:640px){.toc ol{columns:1}}
+table.wide{font-size:13px}table.wide td,table.wide th{padding:6px 5px}</style>
+</head><body>
+<div class="top"><div class="wrap"><a class="back" href="../../index.html">← חזרה לאתר הקורס</a><div class="kick">מבוא לחשבונאות פיננסית · שיעור 3 · 28.10.2026</div><h1>רישום חשבונאי בסיסי: פקודות יומן</h1></div></div>
+<div class="wrap"><nav class="toc"><b>בעמוד</b><ol><li><a href="#s1">מטרת השיעור</a></li><li><a href="#s2">חיזוק: עלות המכירות והרווח הגולמי</a></li><li><a href="#s3">תיעוד עסקאות: שלב 1, טבלת השפעות</a></li><li><a href="#s4">שלב 2: חובה וזכות</a></li><li><a href="#s5">תרגיל כיתה: חברת ״ביאן״</a></li><li><a href="#s6">רישום ישיר של פקודות יומן</a></li><li><a href="#s7">ריכוז: כרטיסי חשבון ומאזן בוחן תלת טורי</a></li><li><a href="#s8">סיכום</a></li></ol></nav>
+<section id="s1"><h2><span class="sn">1</span>מטרת השיעור</h2>
+<p>עד כה הוצגו הגדרות: אמרנו שלקוחות הם חוב כלפי החברה, אבל לא ציינו איך החוב נוצר. הסברנו שנכסים הם משאבים, אבל לא הגדרנו איך הם נוצרים. בשיעור הזה משלימים את החסר: איך רושמים ומתעדים עסקאות ואירועים כלכליים במלואם.</p>
+<div class="note"><b>המטרה.</b> לא רק להגדיר, אלא לתאר את מכלול ההשפעות של עסקה על נכסים, התחייבויות, הון עצמי, הכנסות והוצאות. הדרך המקובלת לתאר אותן היא <b>פקודות יומן</b>.</div>
+<p>השיעור בנוי משני חלקים. בחלק הראשון מחזקים את הנושא מהשיעור הקודם: עלות המכר והרווח הגולמי. בחלק השני עוברים לנושא העיקרי: תיעוד חשבונאי בסיסי באמצעות פקודות יומן.</p>
+</section><section id="s2"><h2><span class="sn">2</span>חיזוק: עלות המכירות והרווח הגולמי</h2>
+<p>דוח רווח והפסד של חברה מסחרית (חברה שקונה ומוכרת מוצרים כעיסוק עיקרי) נפתח בשלוש שורות: מכירות, עלות המכירות והרווח הגולמי. הרווח הגולמי הוא הרווח הבסיסי ביותר: ההפרש בין ההכנסות העיקריות מהמכירות לבין העלות הבסיסית ביותר, עלות המוצרים שנמכרו.</p>
+<div class="eq"><span class="eb i">מכירות נטו</span><span class="eo">-</span><span class="eb x">עלות המכירות</span><span class="eo">=</span><span class="eb q">רווח גולמי</span></div>
+<h3>מכירות נטו ועלות המכירות</h3>
+<div class="tw"><table class=""><thead><tr><th>מכירות נטו</th><th>פעולה</th><th>עלות המכירות</th><th>פעולה</th></tr></thead><tbody><tr><td>מכירות ברוטו</td><td>+</td><td>מלאי פתיחה (מלאי לתחילת השנה)</td><td>+</td></tr><tr><td>החזרות מלקוחות</td><td>(-)</td><td>קניות נטו (קניות בניכוי הנחות והחזרות)</td><td>+</td></tr><tr><td>הנחות מסחריות שנתנו ללקוחות</td><td>(-)</td><td>מלאי סגירה (מלאי לתום השנה)</td><td>(-)</td></tr><tr><td>סך הכל מכירות נטו</td><td>=</td><td>סך עלות המכירות</td><td>=</td></tr></tbody></table></div>
+<p><b>הנחה מסחרית</b> היא כל הנחה שאינה הנחת מזומן. הנחות מזומן הן הוצאות מימון או הכנסות מימון, ואינן נכללות במכירות או בעלות המכירות.</p>
+<h3>איך מחלצים את עלות המכר</h3>
+<p>נניח שבתחילת 2020 היה מלאי בעלות 100, במהלך השנה נקנו מוצרים ב-300, ובסוף השנה נשאר מלאי בעלות 120. כמה עלו המוצרים שיצאו מהמלאי, כלומר נמכרו? נסמן ב-X. מה שהיה ועוד מה שנקנה, פחות מה שנשאר, הוא מה שיצא:</p>
+<div class="tw"><table class="num"><thead><tr><th>רכיב</th><th>סכום</th></tr></thead><tbody><tr><td>מלאי פתיחה</td><td><span class="n">100</span></td></tr><tr><td>קניות נטו</td><td><span class="n">300</span></td></tr><tr><td>מלאי סגירה</td><td><span class="n">(120)</span></td></tr><tr class="tot"><td>עלות המכר</td><td><span class="n">280</span></td></tr></tbody></table></div>
+<h3>קניות נטו</h3>
+<div class="tw"><table class=""><thead><tr><th>רכיב</th><th>פעולה</th><th>הערה</th></tr></thead><tbody><tr><td>קניות ברוטו</td><td>+</td><td>הרכישות של מלאי.</td></tr><tr><td>הובלה למחסן</td><td>+</td><td>עלות הבאת המלאי למחסן.</td></tr><tr><td>החזרות לספקים</td><td>(-)</td><td>מוצרים שהוחזרו לספק.</td></tr><tr><td>הנחות מסחריות מספקים</td><td>(-)</td><td>כל הנחה שאינה הנחת מזומן.</td></tr><tr><td>קניות נטו</td><td>=</td><td>הנחות מזומן מספקים הן הכנסות מימון, ואינן חלק מעלות המכירות.</td></tr></tbody></table></div>
+<div class="note"><b>תרגולון.</b> מהרשימה הבאה חשבו את הרווח הגולמי: קניות ברוטו 50,000, ספקים 4,000, החזרות לספקים 7,000, מכירות 200,000, הוצאות הובלה ללקוחות 3,000, הנחות מזומן ללקוחות 2,000, הנחות מזומן מספקים 6,000, הנחות מסחריות מספקים 1,000, הוצאות הובלה למחסן 8,000, מלאי פתיחה 10,000, מלאי סגירה 12,000.</div>
+<details><summary>הצגת הפתרון</summary>
+<p>קודם מסננים: ספקים הוא יתרה בדוח על המצב הכספי, הוצאות הובלה ללקוחות הן הוצאות מכירה, והנחות מזומן הן סעיפי מימון. אף אחד מהם אינו משפיע על הרווח הגולמי.</p>
+<div class="tw"><table class="num"><thead><tr><th>חישוב</th><th>סכום</th></tr></thead><tbody><tr><td>מכירות נטו (אין החזרות והנחות מסחריות ללקוחות)</td><td><span class="n">200,000</span></td></tr><tr><td>קניות נטו: <span class="n">50,000 + 8,000 - 7,000 - 1,000</span></td><td><span class="n">50,000</span></td></tr><tr><td>עלות המכירות: <span class="n">10,000 + 50,000 - 12,000</span></td><td><span class="n">48,000</span></td></tr><tr class="tot"><td>רווח גולמי: <span class="n">200,000 - 48,000</span></td><td><span class="n">152,000</span></td></tr></tbody></table></div></details></section><section id="s3"><h2><span class="sn">3</span>תיעוד עסקאות: שלב 1, טבלת השפעות</h2>
+<p>עד עכשיו עסקנו בעריכת דוחות כספיים כשהיתרות (הערכים הכספיים מכל סוג) היו נתונות: קיבלנו רשימה וסיווגנו את רכיביה לדוחות. אבל הבנה מלאה של המידע החשבונאי כוללת גם תיעוד של עסקאות ספציפיות, על כל היבטיהן.</p>
+<p>כל אירוע כלכלי בחברה צריך לקבל ביטוי מפורש, שמבטא את כל ההשפעות שלו, והביטוי חייב לשמור על הזהות החשבונאית:</p>
+<div class="eq"><span class="eb a">נכסים</span><span class="eo">=</span><span class="eb l">התחייבויות</span><span class="eo">+</span><span class="eb q">הון עצמי</span></div>
+<p>הרישום אינו מתמטי בלבד. הוא נשען על טכניקה שנקראת <b>פקודות יומן</b> (Journal Entries), והוא נעשה מנקודת הראות של החברה, ולכן לחלק מהסטודנטים הוא מרגיש ״הפוך מההיגיון״. הלימוד בשני שלבים:</p>
+<ul class="rules"><li><b>שלב 1.</b> הצגה מתמטית של כל עסקה לפי המשוואה: נכסים = התחייבויות + הון עצמי (הון מניות, הכנסות בסימן חיובי, הוצאות בסימן שלילי).</li><li><b>שלב 2.</b> המרה של הטבלה לפקודות יומן, לפי טבלת ההמרה.</li></ul>
+<div class="term"><div class="th">פקודת יומן</div><p><b>בפשטות.</b> תיעוד של עסקה אחת בשורות: מה גדל ומה קטן, כך שסכום החובה שווה תמיד לסכום הזכות.</p><p><b>דוגמה.</b> החברה נטלה הלוואה של 50,000 והכסף נכנס לעו״ש: חובה מזומן 50,000, זכות הלוואה 50,000.</p></div>
+<h3>דוגמה: תשע עסקאות בחברה שהוקמה ב-1.1.2020</h3>
+<ul class="rules">
+<li>א. החברה הנפיקה 30,000 מניות בנות 2 ש״ח ערך נקוב כל אחת תמורת 60,000 ש״ח.</li>
+<li>ב. החברה לוותה 50,000 ש״ח כהלוואה ל-5 שנים, שתסולק בתשלום אחד (קרן וריבית) בתום 5 השנים.</li>
+<li>ג. הריבית שנצברה בגין ההלוואה עד תום שנת הדיווח, וטרם שולמה, היא 3,000 ש״ח.</li>
+<li>ד. החברה העניקה שירותים בהיקף 40,000 ש״ח. 30,000 התקבלו במזומן, והיתרה תתקבל בשנה הבאה.</li>
+<li>ה. החברה שילמה הוצאות חשמל, 5,000 ש״ח.</li>
+<li>ו. החברה שילמה הוצאות תפעוליות, 20,000 ש״ח.</li>
+<li>ז. החברה הפקידה בפיקדון בנקאי לזמן קצר 15,000 ש״ח.</li>
+<li>ח. הפיקדון נפרע בסכום כולל של 16,000 ש״ח (קרן וריבית יחד).</li>
+<li>ט. החברה הכריזה דיבידנד של 5,000 ש״ח, שישולם בשנה הבאה.</li>
+</ul>
+<div class="tw"><table class="num wide"><thead><tr><th>עסקה</th><th>מזומן</th><th>לקוחות</th><th>פקדון</th><th>הלוואה</th><th>ריבית לשלם</th><th>דיבידנד לשלם</th><th>הון מניות</th><th>הוצאות</th><th>הכנסות</th><th>עודפים</th></tr></thead><tbody><tr><td>א. הנפקת מניות</td><td>60,000</td><td></td><td></td><td></td><td></td><td></td><td>60,000</td><td></td><td></td><td></td></tr><tr><td>ב. נטילת הלוואה</td><td>50,000</td><td></td><td></td><td>50,000</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ג. צבירת ריבית</td><td></td><td></td><td></td><td></td><td>3,000</td><td></td><td></td><td>(3,000)</td><td></td><td></td></tr><tr><td>ד. מתן שירותים</td><td>30,000</td><td>10,000</td><td></td><td></td><td></td><td></td><td></td><td></td><td>40,000</td><td></td></tr><tr><td>ה. הוצאות חשמל</td><td>(5,000)</td><td></td><td></td><td></td><td></td><td></td><td></td><td>(5,000)</td><td></td><td></td></tr><tr><td>ו. הוצאות תפעוליות</td><td>(20,000)</td><td></td><td></td><td></td><td></td><td></td><td></td><td>(20,000)</td><td></td><td></td></tr><tr><td>ז. הפקדה בפיקדון</td><td>(15,000)</td><td></td><td>15,000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ח. פירעון הפיקדון</td><td>16,000</td><td></td><td>(15,000)</td><td></td><td></td><td></td><td></td><td></td><td>1,000</td><td></td></tr><tr><td>ט. הכרזת דיבידנד</td><td></td><td></td><td></td><td></td><td></td><td>5,000</td><td></td><td></td><td></td><td>(5,000)</td></tr></tbody></table></div>
+<div class="note">הדיבידנד אינו הוצאה. הוא חלוקה של רווחים לבעלים, ולכן מקטין את העודפים (חלק מההון העצמי) ויוצר התחייבות לשלם. בפיקדון שנפרע, 15,000 הם הקרן שחזרה למזומן, ו-1,000 הם הכנסות ריבית.</div>
+</section><section id="s4"><h2><span class="sn">4</span>שלב 2: חובה וזכות</h2>
+<p>טכניקת הרישום החשבונאית אינה כוללת ביטויים כמו ״הנכסים גדלים״ או ״ההון קטן״. היא כוללת את המונחים <b>חובה וזכות</b>. הטבלה הבאה היא כל מה שצריך לזכור:</p>
+<div class="tw"><table class=""><thead><tr><th></th><th>נכסים</th><th>התחייבויות</th><th>הון עצמי</th></tr></thead><tbody><tr><td>גידול</td><td>חובה</td><td>זכות</td><td>זכות</td></tr><tr><td>קיטון</td><td>זכות</td><td>חובה</td><td>חובה</td></tr></tbody></table></div>
+<p>ברמת הכנסות והוצאות:</p>
+<div class="tw"><table class=""><thead><tr><th></th><th>נכסים</th><th>התחייבויות</th><th>הון עצמי</th><th>הכנסות</th><th>הוצאות</th></tr></thead><tbody><tr><td>עלייה</td><td>חובה</td><td>זכות</td><td>זכות</td><td>זכות</td><td>חובה</td></tr><tr><td>ירידה</td><td>זכות</td><td>חובה</td><td>חובה</td><td>חובה</td><td>זכות</td></tr></tbody></table></div>
+<div class="note"><b>טיפ.</b> הכנסות מגדילות את ההון העצמי, ולכן הכנסות נרשמות בזכות. הוצאות מקטינות את ההון העצמי, ולכן הוצאות נרשמות בחובה. לכן, גם כשהוצאה נראית כ״גידול״ (הוצאות ריבית גדלו), היא נרשמת בחובה.</div>
+<div class="term"><div class="th">חובה</div><p><b>בפשטות.</b> הצד של הפקודה שבו רושמים גידול בנכס, קיטון בהתחייבות או בהון, והוצאה.</p><p><b>דוגמה.</b> קנינו ציוד: חובה ציוד.</p></div><div class="term"><div class="th">זכות</div><p><b>בפשטות.</b> הצד של הפקודה שבו רושמים קיטון בנכס, גידול בהתחייבות או בהון, והכנסה.</p><p><b>דוגמה.</b> שילמנו במזומן: זכות מזומן. נתנו שירות: זכות הכנסות.</p></div>
+<h3>הפקודות של תשע העסקאות</h3>
+<h3>א. הנפקת מניות</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">60,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;הון מניות</td><td></td><td><span class="n">60,000</span></td></tr></tbody></table></div><p>המזומן (נכס) גדל, ומקורו בהשקעת בעלים, שהיא הון עצמי ולא התחייבות.</p><h3>ב. נטילת הלוואה</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">50,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;הלוואה ל-5 שנים</td><td></td><td><span class="n">50,000</span></td></tr></tbody></table></div><p>הכסף נכנס לעו״ש, והמקור שלו הוא התחייבות.</p><h3>ג. צבירת ריבית</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>הוצאות ריבית</td><td><span class="n">3,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;ריבית לשלם</td><td></td><td><span class="n">3,000</span></td></tr></tbody></table></div><p>ההוצאה נרשמת גם אם טרם שולמה. הריבית שטרם שולמה היא התחייבות. יותר הוצאות הוא ירידה בהון העצמי, וירידה בהון נרשמת בחובה.</p><h3>ד. מתן שירותים</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">30,000</span></td><td></td></tr><tr><td>לקוחות</td><td><span class="n">10,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;הכנסות משירותים</td><td></td><td><span class="n">40,000</span></td></tr></tbody></table></div><p>ההכנסה היא שווי השירות שסופק, 40,000, ללא קשר לכסף שהתקבל. החלק שטרם התקבל הוא חוב של הלקוח, כלומר נכס.</p><h3>ה. הוצאות חשמל</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>הוצאות חשמל</td><td><span class="n">5,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">5,000</span></td></tr></tbody></table></div><p>ההוצאה מקטינה את ההון (חובה הוצאה), והמזומן, נכס, קטן (זכות).</p><h3>ו. הוצאות תפעוליות</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>הוצאות תפעוליות</td><td><span class="n">20,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">20,000</span></td></tr></tbody></table></div><p>בדיוק כמו בסעיף הקודם, רק ששם ההוצאה שונה.</p><h3>ז. הפקדה בפיקדון</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>פיקדון לזמן קצר</td><td><span class="n">15,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">15,000</span></td></tr></tbody></table></div><p>נכס אחד הוחלף בנכס אחר: הפיקדון גדל והמזומן קטן. אין הוצאה.</p><h3>ח. פירעון הפיקדון</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">16,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;פיקדון לזמן קצר</td><td></td><td><span class="n">15,000</span></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;הכנסות ריבית</td><td></td><td><span class="n">1,000</span></td></tr></tbody></table></div><p>התקבל מזומן (חובה), הפיקדון נפרע (זכות), והריבית של 1,000 היא הכנסה שמגדילה את ההון (זכות).</p><h3>ט. הכרזת דיבידנד</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>עודפים (דיבידנד)</td><td><span class="n">5,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;דיבידנד לשלם</td><td></td><td><span class="n">5,000</span></td></tr></tbody></table></div><p>חלוקה של רווחים מקטינה את העודפים (חובה), והסכום טרם שולם ולכן נוצרה התחייבות (זכות).</p></section><section id="s5"><h2><span class="sn">5</span>תרגיל כיתה: חברת ״ביאן״</h2>
+<p>לפניכם עסקאות בחברת ״ביאן״ בע״מ, שהוקמה ב-1.1.2008. כל העסקאות הן בשנת 2008. מומלץ לפתור לבד לפני שפותחים את הפתרון.</p>
+<ul class="rules">
+<li>א. החברה הנפיקה 40,000 מניות בנות 3 ש״ח ערך נקוב כל אחת בתמורה ל-120,000 ש״ח.</li>
+<li>ב. החברה העניקה שירותים ללקוחות בסכום של 200,000 ש״ח. מחצית התקבלה במזומן, רבע בצ׳ק דחוי, והיתרה תתקבל בשנה הבאה.</li>
+<li>ג. החברה נטלה הלוואה של 150,000 ש״ח, שתיפרע בעוד 3 שנים.</li>
+<li>ד. תשלום הריבית התקופתית בגין ההלוואה מסעיף ג, 19,000 ש״ח, בוצע.</li>
+<li>ה. החברה צרכה שירותי עבודה בשווי 35,000 ש״ח, ושילמה עד תום השנה 20,000 ש״ח בלבד. משכורות של 15,000 ש״ח טרם שולמו.</li>
+</ul>
+<p><b>נדרש:</b> לתעד את העסקאות בטבלה, ולרשום פקודות יומן.</p>
+<details><summary>הצגת הפתרון</summary>
+<div class="tw"><table class="num wide"><thead><tr><th>עסקה</th><th>מזומן</th><th>לקוחות</th><th>צ׳קים לקבל</th><th>הלוואה</th><th>שכר לשלם</th><th>הון מניות</th><th>הכנסות</th><th>הוצאות</th></tr></thead><tbody><tr><td>א. הנפקת מניות</td><td>120,000</td><td></td><td></td><td></td><td></td><td>120,000</td><td></td><td></td></tr><tr><td>ב. מתן שירות</td><td>100,000</td><td>50,000</td><td>50,000</td><td></td><td></td><td></td><td>200,000</td><td></td></tr><tr><td>ג. נטילת הלוואה</td><td>150,000</td><td></td><td></td><td>150,000</td><td></td><td></td><td></td><td></td></tr><tr><td>ד. תשלום ריבית</td><td>(19,000)</td><td></td><td></td><td></td><td></td><td></td><td></td><td>(19,000)</td></tr><tr><td>ה. צריכת שירותי עבודה</td><td>(20,000)</td><td></td><td></td><td></td><td>15,000</td><td></td><td></td><td>(35,000)</td></tr></tbody></table></div>
+<p>הסברים. בסעיף א התקבל מזומן, וכשמשאלים מה מקורו, התשובה היא השקעת בעלים. השקעת בעלים היא הון עצמי ולא התחייבות, והיא נרשמת בשם הון מניות. בסעיף ב ההכנסה היא שווי השירות, 200,000. המזומן גדל ב-100,000, וה-100,000 הנותרים הם חוב כלפי החברה: צ׳ק דחוי של 50,000 (צ׳קים לקבל) וחוב נוסף של 50,000 (לקוחות). בסעיף ג מקור הגידול במזומן הוא התחייבות. בסעיף ד ריבית על הלוואה היא הוצאה, והמזומן קטן. בסעיף ה כל שווי השירות שנצרך הוא הוצאה, והחלק שטרם שולם הוא התחייבות (שכר לשלם).</p>
+<div class="tw"><table><thead><tr><th>א. הנפקת מניות</th><th>ב. מתן שירות</th><th>ג. נטילת הלוואה</th><th>ד. תשלום ריבית</th><th>ה. הוצאות שכר</th></tr></thead><tbody><tr>
+<td>חובה מזומן <span class="n">120,000</span><br>זכות הון מניות <span class="n">120,000</span></td>
+<td>חובה מזומן <span class="n">100,000</span><br>חובה לקוחות <span class="n">50,000</span><br>חובה צ׳קים לקבל <span class="n">50,000</span><br>זכות הכנסות <span class="n">200,000</span></td>
+<td>חובה מזומן <span class="n">150,000</span><br>זכות הלוואה <span class="n">150,000</span></td>
+<td>חובה הוצאות ריבית <span class="n">19,000</span><br>זכות מזומן <span class="n">19,000</span></td>
+<td>חובה הוצאות שכר <span class="n">35,000</span><br>זכות מזומן <span class="n">20,000</span><br>זכות שכר לשלם <span class="n">15,000</span></td></tr></tbody></table></div>
+</details>
+</section><section id="s6"><h2><span class="sn">6</span>רישום ישיר של פקודות יומן</h2>
+<p>בתרגילים הקודמים בנינו קודם טבלת עזר, ורק אחר כך עברנו לפקודות. המטרה עכשיו היא לרשום פקודה ישירות מהאירוע, בלי לעבור דרך הטבלה: לזהות מה השתנה, ובאיזה צד של הפקודה זה נרשם.</p>
+<p>חברת ״רעות שפירא״ בע״מ הוקמה ב-1.1.2024. רשמו פקודת יומן לכל אחד מהאירועים, ואחר כך פתחו את הפתרון.</p>
+<ul class="rules">
+<li>א. הנפקת 45,000 מניות בנות 4 ש״ח ערך נקוב כל אחת, בתמורה ל-180,000 ש״ח במזומן.</li>
+<li>ב. נטילת הלוואה ללא ריבית ל-8 שנים בסך 350,000 ש״ח, שהועברו לעו״ש.</li>
+<li>ג. החזרת 30,000 ש״ח מתוך ההלוואה.</li>
+<li>ד. קניות מספקים בעלות 40,000 ש״ח. שולמו במזומן 28,000 ש״ח, והיתרה תשולם בשנה הבאה.</li>
+<li>ה. רכישת מכונה בעלות 150,000 ש״ח. שולמו במזומן 40,000 ש״ח, והיתרה תשולם לספק בשנה הבאה.</li>
+<li>ו. רכישת נקניקיות לעובדי המשרד בעלות 500 ש״ח, ששולמו במזומן.</li>
+<li>ז. מכירות ללקוח בהיקף 70,000 ש״ח: 25,000 ש״ח במזומן, 8,000 ש״ח בשיק דחוי שייפרע בשנה הבאה, והיתרה טרם שולמה.</li>
+</ul>
+<details><summary>הצגת הפתרון</summary>
+<h3>א</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">180,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;הון מניות</td><td></td><td><span class="n">180,000</span></td></tr></tbody></table></div><h3>ב</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">350,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;הלוואה</td><td></td><td><span class="n">350,000</span></td></tr></tbody></table></div><h3>ג</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>הלוואה</td><td><span class="n">30,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">30,000</span></td></tr></tbody></table></div><h3>ד</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>קניות</td><td><span class="n">40,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">28,000</span></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;ספקים</td><td></td><td><span class="n">12,000</span></td></tr></tbody></table></div><p>קניות ללא תיאור נוסף הן קנייה שוטפת, והיא הוצאה בסכום המלא, ללא תלות במועד התשלום.</p><h3>ה</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מכונת נקניק (רכוש קבוע)</td><td><span class="n">150,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">40,000</span></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;ספקים</td><td></td><td><span class="n">110,000</span></td></tr></tbody></table></div><p>מכונה היא נכס שישרת את החברה תקופה ארוכה, ולכן מלוא עלותה היא נכס ולא הוצאה.</p><h3>ו</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>הוצאות נקניק לעובדים</td><td><span class="n">500</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">500</span></td></tr></tbody></table></div><h3>ז</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">25,000</span></td><td></td></tr><tr><td>שיקים לקבל</td><td><span class="n">8,000</span></td><td></td></tr><tr><td>לקוחות</td><td><span class="n">37,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;הכנסות ממכירות</td><td></td><td><span class="n">70,000</span></td></tr></tbody></table></div><p>כל סכום המכירה הוא הכנסה. החוב של הלקוח הוא <span class="n">70,000 - 25,000 - 8,000 = 37,000</span>.</p></details></section><section id="s7"><h2><span class="sn">7</span>ריכוז: כרטיסי חשבון ומאזן בוחן תלת טורי</h2>
+<p>חברת ״מקינטה הקטנה״ בע״מ הוקמה ב-1.1.2018. בשנת הקמתה אירעו העסקאות הבאות. נדרש לרשום פקודת יומן לכל עסקה, לערוך כרטיסי חשבון ולהציג מאזן בוחן תלת טורי.</p>
+<ul class="rules">
+<li>א. הנפקת 200,000 מניות בנות 1 ש״ח ערך נקוב, בתמורה ל-200,000 ש״ח.</li>
+<li>ב. נטילת הלוואות לזמן ארוך בסך 70,000 ש״ח.</li>
+<li>ג. תשלום הוצאות ריבית בגין הלוואות לזמן ארוך, 7,000 ש״ח.</li>
+<li>ד. קניות מספקים בעלות 40,000 ש״ח. 10,000 שולמו במזומן, והיתרה טרם שולמה.</li>
+<li>ה. מכירות ללקוחות בהיקף 100,000 ש״ח, מתוכם 44,000 ש״ח במזומן, והיתרה באשראי.</li>
+<li>ו. תשלום הוצאות חשמל, 15,000 ש״ח.</li>
+<li>ז. תשלום הוצאות פרסום, 4,000 ש״ח.</li>
+<li>ח. רכישת מחשבים לעובדי המשרד בסך 8,000 ש״ח: 5,000 במזומן והיתרה באשראי ספקים.</li>
+<li>ט. נטילת הלוואה לזמן קצר בסך 10,000 ש״ח.</li>
+<li>י. תשלום הוצאות שכר ומשכורות כלליות, 20,000 ש״ח.</li>
+</ul>
+<details><summary>הצגת פקודות היומן</summary>
+<h3>א</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">200,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;הון מניות</td><td></td><td><span class="n">200,000</span></td></tr></tbody></table></div><h3>ב</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">70,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;הלוואה לזמן ארוך</td><td></td><td><span class="n">70,000</span></td></tr></tbody></table></div><h3>ג</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>הוצאות ריבית</td><td><span class="n">7,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">7,000</span></td></tr></tbody></table></div><h3>ד</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>קניות</td><td><span class="n">40,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">10,000</span></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;ספקים</td><td></td><td><span class="n">30,000</span></td></tr></tbody></table></div><h3>ה</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">44,000</span></td><td></td></tr><tr><td>לקוחות</td><td><span class="n">56,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מכירות</td><td></td><td><span class="n">100,000</span></td></tr></tbody></table></div><h3>ו</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>הוצאות חשמל</td><td><span class="n">15,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">15,000</span></td></tr></tbody></table></div><h3>ז</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>הוצאות פרסום</td><td><span class="n">4,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">4,000</span></td></tr></tbody></table></div><h3>ח</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מחשבים</td><td><span class="n">8,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">5,000</span></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;ספקים</td><td></td><td><span class="n">3,000</span></td></tr></tbody></table></div><p>מחשב הוא פריט בר קיימא, ולכן מלוא עלותו נכס.</p><h3>ט</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">10,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;הלוואה לזמן קצר</td><td></td><td><span class="n">10,000</span></td></tr></tbody></table></div><h3>י</h3><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td>הוצאות שכר ומשכורות</td><td><span class="n">20,000</span></td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;מזומן</td><td></td><td><span class="n">20,000</span></td></tr></tbody></table></div></details><div class="term"><div class="th">כרטיס חשבון</div><p><b>בפשטות.</b> טבלה קטנה לחשבון אחד, שבה מרכזים את כל התנועות שלו מהפקודות: חובה בצד אחד וזכות בצד השני, ובסוף יתרה.</p><p><b>דוגמה.</b> כרטיס המזומן: חובה 324,000 (200,000 + 70,000 + 44,000 + 10,000), זכות 61,000, יתרה בחובה 263,000.</p></div>
+<h3>כרטיסי החשבון</h3>
+<div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>סכום בחובה</th><th>סכום בזכות</th><th>יתרה</th></tr></thead><tbody><tr><td>מזומן</td><td><span class="n">324,000</span></td><td><span class="n">61,000</span></td><td><span class="n">263,000 חובה</span></td></tr><tr><td>הוצאות ריבית</td><td><span class="n">7,000</span></td><td></td><td><span class="n">7,000 חובה</span></td></tr><tr><td>קניות</td><td><span class="n">40,000</span></td><td></td><td><span class="n">40,000 חובה</span></td></tr><tr><td>לקוחות</td><td><span class="n">56,000</span></td><td></td><td><span class="n">56,000 חובה</span></td></tr><tr><td>הוצאות חשמל</td><td><span class="n">15,000</span></td><td></td><td><span class="n">15,000 חובה</span></td></tr><tr><td>הוצאות פרסום</td><td><span class="n">4,000</span></td><td></td><td><span class="n">4,000 חובה</span></td></tr><tr><td>מחשבים</td><td><span class="n">8,000</span></td><td></td><td><span class="n">8,000 חובה</span></td></tr><tr><td>שכר ומשכורות</td><td><span class="n">20,000</span></td><td></td><td><span class="n">20,000 חובה</span></td></tr><tr><td>הון מניות</td><td></td><td><span class="n">200,000</span></td><td><span class="n">200,000 זכות</span></td></tr><tr><td>ספקים</td><td></td><td><span class="n">33,000</span></td><td><span class="n">33,000 זכות</span></td></tr><tr><td>הלוואה לזמן ארוך</td><td></td><td><span class="n">70,000</span></td><td><span class="n">70,000 זכות</span></td></tr><tr><td>מכירות</td><td></td><td><span class="n">100,000</span></td><td><span class="n">100,000 זכות</span></td></tr><tr><td>הלוואה לזמן קצר</td><td></td><td><span class="n">10,000</span></td><td><span class="n">10,000 זכות</span></td></tr></tbody></table></div>
+<p>ספקים: <span class="n">30,000 + 3,000 = 33,000</span>, משני האירועים (ד וח).</p>
+<div class="term"><div class="th">מאזן בוחן תלת טורי</div><p><b>בפשטות.</b> טבלה אחת שמרכזת את כל הכרטיסים בשלושה טורים: יתרת פתיחה (1.1), תנועות התקופה, ויתרת סגירה (31.12).</p><p><b>דוגמה.</b> בחברה חדשה אין יתרות פתיחה, ולכן הטור הראשון ריק. בטור הסגירה, סך היתרות בחובה (413,000) שווה לסך היתרות בזכות (413,000).</p></div><div class="tw"><table class="num"><thead><tr><th>חשבון</th><th>תנועות: חובה</th><th>תנועות: זכות</th><th>יתרת סגירה: חובה</th><th>יתרת סגירה: זכות</th></tr></thead><tbody><tr><td>מזומן</td><td>324,000</td><td>61,000</td><td>263,000</td><td></td></tr><tr><td>הוצאות ריבית</td><td>7,000</td><td></td><td>7,000</td><td></td></tr><tr><td>קניות</td><td>40,000</td><td></td><td>40,000</td><td></td></tr><tr><td>הון מניות</td><td></td><td>200,000</td><td></td><td>200,000</td></tr><tr><td>ספקים</td><td></td><td>33,000</td><td></td><td>33,000</td></tr><tr><td>לקוחות</td><td>56,000</td><td></td><td>56,000</td><td></td></tr><tr><td>הלוואה לזמן ארוך</td><td></td><td>70,000</td><td></td><td>70,000</td></tr><tr><td>מכירות</td><td></td><td>100,000</td><td></td><td>100,000</td></tr><tr><td>הוצאות חשמל</td><td>15,000</td><td></td><td>15,000</td><td></td></tr><tr><td>הוצאות פרסום</td><td>4,000</td><td></td><td>4,000</td><td></td></tr><tr><td>מחשבים</td><td>8,000</td><td></td><td>8,000</td><td></td></tr><tr><td>הלוואה לזמן קצר</td><td></td><td>10,000</td><td></td><td>10,000</td></tr><tr><td>שכר ומשכורות</td><td>20,000</td><td></td><td>20,000</td><td></td></tr><tr class="tot"><td>סך הכל</td><td>474,000</td><td>474,000</td><td>413,000</td><td>413,000</td></tr></tbody></table></div><div class="note">בדיקה: בכל מאזן בוחן סך החובה שווה לסך הזכות, גם בתנועות וגם ביתרות. אם לא, יש טעות ברישום.</div></section><section id="s8"><h2><span class="sn">8</span>סיכום</h2>
+<ol class="five">
+<li>רווח גולמי: מכירות נטו בניכוי עלות המכירות. עלות המכירות: מלאי פתיחה, ועוד קניות נטו, פחות מלאי סגירה.</li>
+<li>כל עסקה מתועדת כך שהזהות נשמרת: נכסים = התחייבויות + הון עצמי.</li>
+<li>גידול בנכס רושמים בחובה, וקיטון בו בזכות. התחייבויות והון הפוך: גידול בזכות, קיטון בחובה.</li>
+<li>הכנסות נרשמות בזכות, והוצאות בחובה. סכום החובה בכל פקודה שווה לסכום הזכות.</li>
+<li>הכנסה והוצאה נרשמות לפי שווי השירות או המוצר, ללא קשר למועד התשלום. החלק שטרם שולם או שטרם התקבל הוא התחייבות או נכס.</li>
+<li>דיבידנד מקטין את העודפים ויוצר התחייבות. פריט בר קיימא (מחשב, מכונה) הוא נכס ולא הוצאה.</li>
+<li>כרטיסי חשבון ומאזן בוחן תלת טורי מרכזים את הפקודות ליתרות.</li>
+</ol>
+<div class="note">סרטון עזר מפורט על פקודות יומן, שהוקלט כתוספת: <a href="https://youtu.be/yBkNCQvDNCw" target="_blank" rel="noopener"><span class="n">https://youtu.be/yBkNCQvDNCw</span></a></div>
+</section><footer>ד״ר שי צבאן · המכללה האקדמית עמק יזרעאל · סמסטר א׳ תשפ״ז</footer></div>
+</body>
+</html>
