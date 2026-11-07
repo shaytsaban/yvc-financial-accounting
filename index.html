@@ -73,6 +73,16 @@ h2.sec:before{content:"";width:34px;height:5px;border-radius:5px;background:var(
 .lk .ar{margin-right:auto;color:var(--coral);font-weight:800;font-size:20px}
 .lk.p .e{background:#ffe3dc}.lk.s .e{background:#dff5f2}.lk.r .e{background:#ece8ff}
 
+/* homework submission box inside a lecture card */
+.hwsub{margin:0 30px 26px;background:linear-gradient(135deg,#fff3e8,#ffe9dc);border:2px solid var(--coral);border-radius:18px;padding:20px 24px;display:flex;gap:18px;align-items:flex-start}
+.hwsub .ic{font-size:40px;line-height:1;flex:none}
+.hwsub h4{font-size:20px;font-weight:800;color:#c2401f;margin-bottom:6px}
+.hwsub p{margin:0 0 8px;color:var(--ink2);font-size:16.5px}
+.hwsub .go{display:inline-flex;gap:10px;align-items:center;background:var(--coral);color:#fff;font-weight:800;border-radius:12px;padding:10px 18px;margin:4px 0 10px;box-shadow:0 4px 14px rgba(255,106,77,.3)}
+.hwsub .go:hover{background:#f0532f}
+.hwsub .go small{font-weight:500;opacity:.9}
+.hwsub .how{background:#fff;border-radius:12px;padding:10px 14px;border-right:4px solid var(--navy2);font-size:16px;color:var(--ink2)}
+@media (max-width:760px){.hwsub{margin:0 22px 22px;flex-direction:column;padding:18px}}
 /* two recordings side by side */
 .rec2-note{display:flex;gap:14px;align-items:flex-start;background:#fff6ef;border:1px solid #ffd7c2;border-right:5px solid var(--coral);border-radius:14px;padding:14px 18px;margin-bottom:16px;color:var(--ink2);font-size:16.5px}
 .rec2-note .ic{font-size:26px;line-height:1.2;flex:none}
@@ -388,12 +398,21 @@ footer{margin-top:60px;background:var(--navy);color:#c8d4f2;padding:40px 0}
               <div><b>תרגילי שיעור 4 בחוברת</b><span class="d">מעמוד 34, ובחוברת הפתרונות (עמוד 74 ואילך) הפתרון לאחר ניסיון עצמאי</span></div>
               <span class="ar">←</span>
             </a>
-            <a class="lk p" href="materials/homework.pdf#page=3" target="_blank" rel="noopener">
+            <a class="lk p" href="#homework-4">
               <div class="e">📝</div>
-              <div><b>תרגילי הבית להגשה של שיעור 4</b><span class="d">תרגילים 4.1 ו-4.2. תרגילים מקבילים בחוברת: 4.4 ו-4.8</span></div>
-              <span class="ar">←</span>
+              <div><b>תרגיל בית להגשה: 4.1 ו-4.2</b><span class="d">המקטע להגשה מצורף מתחת. תרגילים מקבילים בחוברת: 4.4 ו-4.8</span></div>
+              <span class="ar">↓</span>
             </a>
           </div>
+        </div>
+      </div>
+      <div class="hwsub" id="homework-4">
+        <div class="ic">📝</div>
+        <div>
+          <h4>שימו לב: יש תרגיל בית להגשה בנושא חשבונות חתך</h4>
+          <p>לשיעור הזה יש תרגילי בית להגשה מתוך חוברת תרגילי הבית: תרגילים 4.1 ו-4.2. המקטע הרלוונטי להגשה מצורף כאן.</p>
+          <a class="go" href="materials/homework-lesson-4.pdf" target="_blank" rel="noopener">פתיחת תרגילי ההגשה של שיעור 4 <small>PDF · 2 עמודים</small></a>
+          <div class="how"><b>איך מגישים.</b> את הפתרון מגישים בתיבת ההגשה שפתחו המתרגלים באתרים שלהם. אם לא ברור איפה התיבה או איך מגישים, פנו אל המתרגלים ושאלו אותם אם יש בעיה טכנית בצד שלהם.</div>
         </div>
       </div>
       <div class="rec" id="recording-4">
