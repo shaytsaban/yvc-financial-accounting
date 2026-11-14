@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>שיעור 6 | מבוא לחשבונאות פיננסית | סיכום</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<style>
+:root{--ink:#16213a;--ink2:#2a3858;--mut:#5d6a86;--paper:#f6f2ea;--line:#e4dccd;--coral:#ff6a4d;--navy:#0f1b33;--navy2:#1b2d55;--asset:#0f9d90}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Heebo','Segoe UI','Arial Hebrew',Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.n{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.top{background:radial-gradient(1000px 500px at 80% 0%,#27447f 0%,var(--navy) 60%,#08101f 100%);color:#fff;padding:34px 0 40px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+.back{display:inline-block;color:#7fe3d6;font-weight:700;text-decoration:none;font-size:15px;margin-bottom:14px}
+.back:hover{text-decoration:underline}
+.kick{color:#7fe3d6;font-weight:700;font-size:15px}
+h1{font-size:clamp(26px,4.4vw,38px);line-height:1.25;font-weight:800;margin-top:6px}
+.toc{background:#fff;border-radius:16px;padding:18px 24px;margin:-22px 0 8px;box-shadow:0 8px 28px rgba(22,33,58,.1);position:relative}
+.toc b{color:var(--navy2)}
+.toc ol{padding-right:22px;columns:2;column-gap:30px;margin-top:6px}
+.toc a{text-decoration:none;color:var(--ink2)}
+.toc a:hover{color:var(--coral)}
+section{margin-top:34px}
+h2{font-size:26px;font-weight:800;color:var(--navy2);padding-bottom:6px;border-bottom:4px solid var(--coral);margin-bottom:14px;display:flex;gap:12px;align-items:center}
+h2 .sn{flex:none;width:36px;height:36px;border-radius:50%;background:var(--navy2);color:#fff;display:grid;place-items:center;font-size:18px}
+h3{font-size:19px;font-weight:800;color:var(--navy2);margin:20px 0 8px}
+p{margin:0 0 10px}
+.tw{overflow-x:auto;margin:8px 0 14px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:16px}
+th{background:var(--navy2);color:#fff;text-align:right;padding:9px 12px;font-weight:700}
+td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:right}
+tbody tr:nth-child(even) td{background:#faf7f1}
+table.num td:nth-child(n+2){text-align:left}
+tr.tot td{background:var(--navy2)!important;color:#fff;font-weight:700}
+.term{background:#fff;border-radius:14px;padding:12px 18px;margin:0 0 12px;border-right:6px solid var(--coral);box-shadow:0 2px 0 var(--line)}
+.term .th{font-weight:800;color:var(--navy2);font-size:18px;margin-bottom:2px}
+.term p{margin:0 0 4px;font-size:16px}
+.note{background:#fff7e0;border-right:5px solid #f0b429;border-radius:10px;padding:10px 16px;margin:12px 0}
+.eq{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin:14px 0}
+.eb{padding:6px 14px;border-radius:10px;font-weight:800}
+.eb.a{background:#dff5f2;color:#087469}.eb.l{background:#ece8ff;color:#4f33c9}.eb.q{background:#fff0d2;color:#a86703}.eb.i{background:#dcf5e6;color:#167a43}.eb.x{background:#fde3e5;color:#b3262f}
+.eo{font-weight:800;font-size:20px}
+.chip{display:inline-block;border-radius:99px;padding:1px 12px;font-weight:700;font-size:14px}
+.chip.c-a{background:#dff5f2;color:#087469}.chip.c-l{background:#ece8ff;color:#4f33c9}.chip.c-q{background:#fff0d2;color:#a86703}.chip.c-i{background:#dcf5e6;color:#167a43}.chip.c-x{background:#fde3e5;color:#b3262f}
+ul.rules{padding-right:22px}ul.rules li{margin-bottom:6px}
+ol.five{padding-right:26px;font-size:18px;line-height:1.9}
+details{background:#fff;border-radius:12px;padding:10px 16px;margin:10px 0;border:1px solid var(--line)}
+summary{cursor:pointer;font-weight:800;color:var(--navy2)}
+details[open] summary{margin-bottom:8px}
+footer{margin:46px 0 30px;color:var(--mut);font-size:14px;text-align:center}
+@media print{.top{background:#fff!important;color:#000}.back,.toc{display:none}section{break-inside:avoid-page}}
+@media (max-width:640px){.toc ol{columns:1}}
+table.wide{font-size:13px}table.wide td,table.wide th{padding:6px 5px}
+.xl{background:#fff;border:1px solid #c9d3e3;border-radius:10px;overflow-x:auto;margin:10px 0 14px;font-size:14px}
+.xl table{border-radius:0;font-size:14px;direction:rtl}
+.xl th{background:#eef1f6;color:#4a5875;text-align:center;font-weight:600;padding:4px 8px;border:1px solid #d5dce8}
+.xl td{border:1px solid #e1e6ef;padding:5px 8px;text-align:center;direction:rtl;white-space:nowrap}
+.xl td.rh{background:#eef1f6;color:#4a5875;width:34px}
+.xl td.f{font-family:Consolas,Menlo,monospace;direction:ltr;color:#1d5fbf;font-size:13px}
+.xl tbody tr:nth-child(even) td{background:transparent}
+.xl tbody tr td.rh{background:#eef1f6}
+.je{white-space:nowrap}
+.je .d,.je .c{display:block}
+.je .c{padding-right:18px}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps li{position:relative;background:#fff;border-radius:12px;padding:10px 16px 10px 16px;margin:0 0 10px;padding-right:52px;border:1px solid var(--line)}
+.steps li:before{counter-increment:s;content:counter(s);position:absolute;right:14px;top:10px;width:28px;height:28px;border-radius:50%;background:var(--coral);color:#fff;font-weight:800;display:grid;place-items:center}
+.four{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0 14px}
+.four .term{margin:0}
+.term.a{border-right-color:var(--asset)}.term.l{border-right-color:#6d4df2}
+@media (max-width:640px){.four{grid-template-columns:1fr}}
+.yr{background:#fff;border-radius:12px;border:1px solid var(--line);padding:10px 16px;margin:0 0 10px}
+.yr b.h{color:var(--navy2)}
+.n.f{font-family:Consolas,Menlo,monospace;color:#1d5fbf;font-size:13.5px;white-space:nowrap}
+
+.tc6{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 14px}
+.tc6 .tc{flex:1;min-width:200px;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.tc6 .tc h4{margin:0;background:#0f9d90;color:#fff;text-align:center;padding:5px;font-size:16px}
+.tc6 .tc.a h4{background:#d0453a}.tc6 .tc.x h4{background:#c98a00}
+.tc6 table{border-radius:0;font-size:15px}.tc6 th{background:#eef1f6;color:#4a5875;text-align:center;padding:4px}
+.tc6 td{text-align:center;padding:4px 6px}.tc6 td:first-child{border-left:2px solid #1b2d55}
+.tc6 tr.bal td{border-top:2px dashed #8a93aa;font-weight:800}
+.tc6 small{display:block;color:#5d6a86;font-size:13px}
+.glos{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:640px){.glos{grid-template-columns:1fr}}
+.glos .term{margin:0}
+.res td,.res th{text-align:center}.res td:first-child,.res th:first-child{text-align:right}
+</style>
+
+</head>
+<body>
+<div class="top"><div class="wrap"><a class="back" href="../../index.html">← חזרה לאתר הקורס</a><div class="kick">מבוא לחשבונאות פיננסית · שיעור 6 · 18.11.2026</div><h1>לקוחות, הלח״מ וחובות אבודים</h1></div></div>
+<div class="wrap"><nav class="toc"><b>בעמוד</b><ol><li><a href="#s1">מטרת השיעור</a></li><li><a href="#s2">מושגי השיעור</a></li><li><a href="#s3">כרטיס הלקוחות</a></li><li><a href="#s4">הלח״מ ולקוחות נטו</a></li><li><a href="#s5">הוצאות הלח״מ בשנה הראשונה</a></li><li><a href="#s6">חובות אבודים</a></li><li><a href="#s7">השנה השנייה: חילוץ הוצאות הלח״מ</a></li><li><a href="#s8">וריאציות: יתרה נתונה ויתרה לתיקון</a></li><li><a href="#s9">תבנית העבודה ושישה כללים</a></li><li><a href="#s10">תרגול עצמי עם פתרונות</a></li><li><a href="#s11">שיעורי הבית</a></li></ol></nav>
+<section id="s1"><h2><span class="sn">1</span>מטרת השיעור</h2>
+<p>עד כה עסקנו במטרת הדוחות הכספיים, בתהליך הרישום ופקודות היומן, ובהכרה בהכנסות ובהוצאות לפי הפעילות ולא לפי המזומן. מהשיעור הזה מעמיקים ברכיבים ספציפיים של הדיווח, ובפרט באופן שבו מודדים נכסים. הנכס הראשון הוא <b>הלקוחות</b>.</p>
+<div class="note"><b>השאלה המרכזית:</b> נכס הלקוחות משקף את הציפייה שהלקוחות ישלמו. מה עושים כשלא כל החוב צפוי להיגבות? מקטינים את הנכס בהערכה, <b>הלח״מ</b>, ורושמים <b>הוצאות הלח״מ</b>.</div>
+<p>השיעור נשען כולו על מחברת הקורס, גיליון ״6 - הרצאה״, וגם על ״6 תרגול נוסף״ ו״5,6 תרגול נוסף״. לאור מרכזיות הנושא, הוא מונגש <a href="presentation.html">במצגת אינטרקטיבית</a> עם 13 גיליונות Excel חיים, ובקובץ <a href="../../materials/lesson-6-summary.xlsx">סיכום השיעור ב-Excel</a>.</p>
+</section><section id="s2"><h2><span class="sn">2</span>מושגי השיעור</h2>
+<div class="glos"><div class="term"><div class="th">לקוחות <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(Accounts receivable)</span></div><p><b>בפשטות.</b> הכסף שלקוחות חייבים לחברה על סחורה או שירות שכבר קיבלו.</p><p><b>דוגמה.</b> נקניקיית דני מכרה לקיוסק נקניקים ב-5,000 ש״ח, והקיוסק ישלם בעוד חודש. לדני יש לקוחות של 5,000 ש״ח.</p><p><b>שימו לב.</b> לקוחות הם נכס, לא הכנסה. ההכנסה נרשמה ביום המכירה; הלקוחות רק אומרים שהכסף עוד לא הגיע.</p></div><div class="term"><div class="th">מכירה באשראי <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(Credit sale)</span></div><p><b>בפשטות.</b> מכירה שבה הלקוח מקבל את הסחורה עכשיו ומשלם אחר כך.</p><p><b>דוגמה.</b> מכירה ב-8,000 ש״ח, תשלום בעוד 30 יום: הלקוחות גדלים ב-8,000.</p><p><b>שימו לב.</b> מכירה במזומן לא נוגעת בכרטיס הלקוחות בכלל: הכסף נכנס מיד.</p></div><div class="term"><div class="th">גבייה מלקוחות <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(Collection)</span></div><p><b>בפשטות.</b> הרגע שבו לקוח משלם את החוב שלו.</p><p><b>דוגמה.</b> הקיוסק שילם 5,000 ש״ח: מזומן גדל ב-5,000, לקוחות קטנים ב-5,000.</p><p><b>שימו לב.</b> גבייה היא לא הכנסה. ההכנסה כבר נרשמה כשהסחורה נמסרה.</p></div><div class="term"><div class="th">כרטיס חשבון <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(T-account, ledger account)</span></div><p><b>בפשטות.</b> טבלה של חשבון אחד, עם צד חובה וצד זכות, שבה רושמים כל שינוי בו.</p><p><b>דוגמה.</b> כרטיס לקוחות: בחובה 100,000 פתיחה ו-50,000 מכירות באשראי, בזכות 40,000 גבייה. יתרה: 110,000 בחובה.</p><p><b>שימו לב.</b> בכרטיס של נכס, הגידולים בחובה והקיטונים בזכות.</p></div><div class="term"><div class="th">לקוחות ברוטו <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(Gross receivables)</span></div><p><b>בפשטות.</b> כל הכסף שהלקוחות חייבים, לפי החוק, בלי לשאול אם הוא באמת ייגבה.</p><p><b>דוגמה.</b> פתיחה 30,000, מכירות באשראי 200,000, גבייה 180,000: לקוחות ברוטו 50,000.</p><p><b>שימו לב.</b> כשבשאלה כתוב ״יתרת כרטיס הלקוחות״, הכוונה ללקוחות ברוטו.</p></div><div class="term"><div class="th">הלח״מ: הפרשה לחובות מסופקים <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(Allowance for doubtful accounts)</span></div><p><b>בפשטות.</b> החלק מחוב הלקוחות שהחברה מעריכה שכנראה לא ייגבה.</p><p><b>דוגמה.</b> לקוחות ברוטו 130,000, שיעור הלח״מ 10%: הלח״מ 13,000.</p><p><b>שימו לב.</b> הלח״מ היא הערכה ליום הדוח. היא לא אומרת איזה לקוח לא ישלם, רק כמה בערך.</p></div><div class="term"><div class="th">חשבון נגדי <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(Contra account)</span></div><p><b>בפשטות.</b> חשבון שמקטין חשבון אחר, ומוצג מתחתיו.</p><p><b>דוגמה.</b> לקוחות 100,000 בחובה, הלח״מ 20,000 בזכות: מוצגים יחד, לקוחות נטו 80,000.</p><p><b>שימו לב.</b> הלח״מ אינה התחייבות. היא מקטינה נכס.</p></div><div class="term"><div class="th">לקוחות נטו <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(Net receivables)</span></div><p><b>בפשטות.</b> החוב שהחברה באמת צפויה לגבות: לקוחות ברוטו פחות הלח״מ.</p><p><b>דוגמה.</b> ברוטו 130,000, הלח״מ 13,000: לקוחות נטו 117,000.</p><p><b>שימו לב.</b> כשמבקשים ״סעיף הלקוחות בדוח על המצב הכספי״, הכוונה ללקוחות נטו.</p></div><div class="term"><div class="th">הוצאות הלח״מ <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(Bad debt expense)</span></div><p><b>בפשטות.</b> ההוצאה של השנה בגלל חובות בעייתיים חדשים שנוצרו השנה.</p><p><b>דוגמה.</b> הלח״מ בפתיחה 13,000, חוב אבוד 4,000, הלח״מ בסגירה 30,600: הוצאות הלח״מ 21,600.</p><p><b>שימו לב.</b> הוצאות הלח״מ אינן יתרת ההלח״מ. הן רק החלק שנוצר השנה.</p></div><div class="term"><div class="th">חוב אבוד <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(Write-off, bad debt)</span></div><p><b>בפשטות.</b> חוב של לקוח שכבר ברור שלא ייגבה לעולם.</p><p><b>דוגמה.</b> קיוסק שחייב 4,000 ש״ח פשט רגל: לקוחות קטנים ב-4,000 והלח״מ קטנה ב-4,000.</p><p><b>שימו לב.</b> לקוחות נטו לא משתנים ברגע המחיקה: גם הברוטו וגם ההלח״מ קטנים באותו סכום.</p></div><div class="term"><div class="th">ערך מחולץ (ערך משלים) <span style="font-weight:500;color:#5d6a86;font-size:14px" dir="ltr">(Plug figure)</span></div><p><b>בפשטות.</b> מספר שלא נתון, ומוצאים אותו כי הוא מה שחסר כדי שהכרטיס יגיע ליתרה הידועה.</p><p><b>דוגמה.</b> פתיחה 2,500, חוב אבוד 9,000, סגירה 7,770: החסר הוא 7,770 פחות 2,500 ועוד 9,000, כלומר 14,270.</p><p><b>שימו לב.</b> קודם מחשבים את יתרת הסגירה, ורק אחר כך מחלצים.</p></div></div>
+</section><section id="s3"><h2><span class="sn">3</span>כרטיס הלקוחות</h2>
+<p><b>מכירה באשראי</b> מגדילה את הלקוחות, בצד החובה של הכרטיס. <b>גבייה</b> מקטינה אותם, בצד הזכות. <b>מכירה במזומן</b> לא נוגעת בכרטיס הלקוחות בכלל, כי אף אחד לא חייב לנו.</p>
+<p><b>דוגמה, נקניקיית דני, ינואר 2026.</b> יתרת פתיחה 12,000 ש״ח. מכירות במזומן 3,000, מכירות באשראי 5,000 ו-9,000, גבייה 4,000. יתרת הלקוחות ב-31.1.2026: 12,000 ועוד 5,000 ועוד 9,000, פחות 4,000, כלומר 22,000 ש״ח בחובה. ה-3,000 במזומן לא נכנסים.</p>
+</section><section id="s4"><h2><span class="sn">4</span>הלח״מ ולקוחות נטו</h2>
+<p>חלק מהלקוחות עלולים לא לשלם. החברה מעריכה את החלק הזה, ומציגה אותו כניכוי מהלקוחות. בקורס ההערכה היא אחוז מיתרת הלקוחות ברוטו בתום השנה.</p>
+<div class="tw"><table class="num"><tbody><tr><td>לקוחות, ברוטו</td><td><span class="n">100,000</span></td></tr><tr><td>בניכוי הלח״מ (20%)</td><td><span class="n">(20,000)</span></td></tr><tr class="tot"><td>לקוחות, נטו</td><td><span class="n">80,000</span></td></tr></tbody></table></div>
+<p><b>שלוש חברות, 31.12.2026.</b> א: ברוטו 200,000, שיעור 5%: הלח״מ 10,000, נטו 190,000. ב: 80,000 ו-10%: הלח״מ 8,000, נטו 72,000. ג: 350,000 ו-4%: הלח״מ 14,000, נטו 336,000. ב-Excel: הלח״מ <code class="xl" dir="ltr">=B2*C2</code>, נטו <code class="xl" dir="ltr">=B2-D2</code>.</p>
+</section><section id="s5"><h2><span class="sn">5</span>הוצאות הלח״מ בשנה הראשונה</h2>
+<p>כשההלח״מ גדלה, הנכס קטן והחברה ״ענייה יותר״: זו הוצאה בדוח רווח והפסד. בשנה הראשונה של חברה ההלח״מ התחילה מ-0, ולכן הוצאות הלח״מ שוות ליתרת ההלח״מ בסוף השנה.</p>
+<p><b>נקניקי החורף, 2020.</b> החברה הוקמה ב-1.1.2020. מכירות 1,000,000 ש״ח, מתוכן 800,000 במזומן והיתר, 200,000, באשראי. גבייה 70,000. שיעור הלח״מ 10%.</p>
+<div class="tc6"><div class="tc "><h4>לקוחות (ברוטו)</h4><table><thead><tr><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td></td><td><small>גבייה</small><span class="n">70,000</span></td></tr><tr><td><small>מכירות באשראי</small><span class="n">200,000</span></td><td></td></tr><tr class="bal"><td><small>יתרה</small><span class="n">130,000</span></td><td></td></tr></tbody></table></div><div class="tc a"><h4>הלח״מ</h4><table><thead><tr><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td></td><td></td></tr><tr><td></td><td><small>הוצאות הלח״מ</small><span class="n">13,000</span></td></tr><tr class="bal"><td></td><td><small>יתרה</small><span class="n">13,000</span></td></tr></tbody></table></div><div class="tc x"><h4>הוצאות הלח״מ</h4><table><thead><tr><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td><small>השנה</small><span class="n">13,000</span></td><td></td></tr></tbody></table></div></div>
+<p>לקוחות ברוטו 130,000, הלח״מ 13,000, לקוחות נטו 117,000, הוצאות הלח״מ 13,000.</p>
+</section><section id="s6"><h2><span class="sn">6</span>חובות אבודים</h2>
+<p><b>חוב אבוד</b> הוא חוב של לקוח מסוים שכבר ברור שלא ייגבה. מוחקים אותו בשני כרטיסים, באותו סכום:</p>
+<div class="tw"><table class="num"><tbody><tr><td>חובה הלח״מ</td><td><span class="n">4,000</span></td></tr><tr><td>זכות לקוחות</td><td><span class="n">4,000</span></td></tr></tbody></table></div>
+<div class="tw"><table class="res"><thead><tr><th></th><th>לפני המחיקה</th><th>המחיקה</th><th>אחרי המחיקה</th></tr></thead><tbody><tr><td>לקוחות, ברוטו</td><td><span class="n">130,000</span></td><td><span class="n">(4,000)</span></td><td><span class="n">126,000</span></td></tr><tr><td>בניכוי הלח״מ</td><td><span class="n">(13,000)</span></td><td><span class="n">4,000</span></td><td><span class="n">(9,000)</span></td></tr><tr class="tot"><td><b>לקוחות, נטו</b></td><td><span class="n">117,000</span></td><td><span class="n">0</span></td><td><span class="n">117,000</span></td></tr></tbody></table></div>
+<div class="note"><b>שימו לב.</b> ברגע המחיקה לקוחות נטו לא משתנים, וגם הרווח לא משתנה: ההוצאה כבר נרשמה כשנוצרה ההלח״מ. מה שכן קרה: ההלח״מ ירדה, ובסוף השנה צריך להשלים אותה מחדש.</div>
+</section><section id="s7"><h2><span class="sn">7</span>השנה השנייה: חילוץ הוצאות הלח״מ</h2>
+<p>משנה שנייה והלאה ההלח״מ לא מתחילה מאפס. סדר העבודה קבוע: יתרת פתיחה, תנועות, יתרת לקוחות ברוטו בסגירה, הלח״מ בסגירה (כפול השיעור), ורק בסוף ההוצאה, כ<b>ערך משלים</b>:</p>
+<div class="note"><b>הוצאות הלח״מ</b> = הלח״מ בסגירה, פחות הלח״מ בפתיחה, ועוד חובות אבודים. דוגמה: 30,600 פחות 13,000, ועוד 4,000, שווה 21,600.</div>
+<p><b>נקניקי החורף, 2021.</b> מכירות באשראי 500,000, גבייה 320,000, חובות אבודים 4,000, שיעור הלח״מ 10%.</p>
+<div class="tc6"><div class="tc "><h4>לקוחות (ברוטו)</h4><table><thead><tr><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td><small>פתיחה</small><span class="n">130,000</span></td><td><small>גבייה</small><span class="n">320,000</span></td></tr><tr><td><small>מכירות באשראי</small><span class="n">500,000</span></td><td><small>חוב אבוד</small><span class="n">4,000</span></td></tr><tr class="bal"><td><small>יתרה</small><span class="n">306,000</span></td><td></td></tr></tbody></table></div><div class="tc a"><h4>הלח״מ</h4><table><thead><tr><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td><small>חוב אבוד</small><span class="n">4,000</span></td><td><small>פתיחה</small><span class="n">13,000</span></td></tr><tr><td></td><td><small>הוצאות הלח״מ</small><span class="n">21,600</span></td></tr><tr class="bal"><td></td><td><small>יתרה</small><span class="n">30,600</span></td></tr></tbody></table></div><div class="tc x"><h4>הוצאות הלח״מ</h4><table><thead><tr><th>חובה</th><th>זכות</th></tr></thead><tbody><tr><td><small>השנה</small><span class="n">21,600</span></td><td></td></tr></tbody></table></div></div>
+<div class="tw"><table class="res"><thead><tr><th></th><th>31.12.2020</th><th>31.12.2021</th></tr></thead><tbody><tr><td>לקוחות ברוטו</td><td><span class="n">130,000</span></td><td><span class="n">306,000</span></td></tr><tr><td>בניכוי הלח״מ</td><td><span class=n>(13,000)</span></td><td><span class=n>(30,600)</span></td></tr><tr class=tot><td><b>לקוחות נטו</b></td><td><span class="n">117,000</span></td><td><span class="n">275,400</span></td></tr><tr><td>הוצאות הלח״מ לשנה</td><td><span class="n">13,000</span></td><td><span class="n">21,600</span></td></tr></tbody></table></div>
+<p>בגיליון ״4 נקניקי החורף״ (שלושה כרטיסים: B ו-C ללקוחות, D ו-E להלח״מ, F להוצאה) כל יתרה היא נוסחה: לקוחות ברוטו <code class="xl" dir="ltr">=B12+B13-C14-C15</code>, הלח״מ <code class="xl" dir="ltr">=B16*B17</code>, ההוצאה <code class="xl" dir="ltr">=E18-E12+D15</code>. הנוסחאות המלאות נמצאות בקובץ <a href="../../materials/lesson-6-summary.xlsx">סיכום השיעור ב-Excel</a>, גיליון 4.</p>
+</section><section id="s8"><h2><span class="sn">8</span>וריאציות: יתרה נתונה ויתרה לתיקון</h2>
+<h3>כשיתרת הלקוחות בסוף השנה נתונה</h3><p>לא צריך מכירות וגבייה. מספיק כרטיס ההלח״מ: פתיחה, חובות אבודים וסגירה.</p>
+<p><b>שאלה קצרה 1.</b> ב-31.12.2020 לקוחות ברוטו 100,000 וב-31.12.2021 150,000, שיעור 10% בשני המועדים, חוב אבוד 4,000. הוצאות הלח״מ: 15,000 פחות 10,000, ועוד 4,000, שווה <b>9,000</b> (תשובה א).</p>
+<p><b>שאלה קצרה 2.</b> ב-31.12.2021 לקוחות 200,000 בשיעור 10%, ב-31.12.2022 300,000 בשיעור 20%, חוב אבוד 5,000. הוצאות הלח״מ: 60,000 פחות 20,000, ועוד 5,000, שווה <b>45,000</b> (תשובה ג). נתון 2020 מיותר.</p>
+<h3>כשהיתרה בספרים חסרה עסקאות</h3><p>לא מחשבים מחדש. מתקנים: חוב אבוד שלא נרשם מקטין את הלקוחות ואת ההלח״מ; מכירה באשראי שלא נרשמה מגדילה את הלקוחות. סך המכירות בשנה הוא בדרך כלל נתון מיותר.</p>
+<p><b>הכסף האבוד, 2025.</b> הלח״מ בפתיחה 80,000. יתרה בספרים 1,500,000, חוב אבוד שלא נרשם 50,000, מכירה באשראי שלא נרשמה 20,000, שיעור 10%. יתרה מתוקנת <span class="n">1,470,000</span>, הלח״מ <span class="n">147,000</span>, הוצאות הלח״מ: 147,000 פחות 80,000, ועוד 50,000, שווה <span class="n">117,000</span>. לקוחות נטו <span class="n">1,323,000</span>.</p>
+</section><section id="s9"><h2><span class="sn">9</span>תבנית העבודה ושישה כללים</h2>
+<div class="tw"><table><thead><tr><th></th><th>לקוחות: חובה</th><th>לקוחות: זכות</th><th>הלח״מ: חובה</th><th>הלח״מ: זכות</th><th>הוצאות הלח״מ: חובה</th></tr></thead><tbody><tr><td>תחילת שנה</td><td>יתרת פתיחה</td><td></td><td></td><td>יתרת פתיחה</td><td></td></tr><tr><td>תנועות</td><td>מכירות באשראי</td><td>גבייה</td><td></td><td></td><td></td></tr><tr><td>חוב אבוד</td><td></td><td>חוב אבוד</td><td>חוב אבוד</td><td></td><td></td></tr><tr class="tot"><td>סוף שנה</td><td>חובה פחות זכות</td><td></td><td></td><td>כפול שיעור ההלח״מ</td><td></td></tr><tr><td>ההוצאה</td><td></td><td></td><td></td><td>הערך המשלים</td><td>אותו סכום</td></tr></tbody></table></div>
+<ol class="five"><li>רק מכירות באשראי וגבייה נכנסות לכרטיס הלקוחות. מכירות במזומן לא.</li><li>הלח״מ בסגירה = לקוחות ברוטו בסגירה כפול השיעור. תמיד מהסוף.</li><li>חוב אבוד: זכות לקוחות, חובה הלח״מ. בלי השפעה על הרווח ועל הלקוחות נטו.</li><li>הוצאות הלח״מ = הלח״מ בסגירה, פחות פתיחה, ועוד חובות אבודים.</li><li>בשנה הראשונה של חברה: הוצאות הלח״מ = יתרת ההלח״מ.</li><li>יתרה שנמסרה בשאלה מתקנים, לא מחשבים מחדש. ״סעיף הלקוחות בדוח״ = לקוחות נטו.</li></ol>
+</section><section id="s10"><h2><span class="sn">10</span>תרגול עצמי עם פתרונות</h2>
+<p>כל תרגילי המצגת, עם נוסחאות חיות, נמצאים בשני קבצים: <a href="../../materials/lesson-6-practice.xlsx">קובץ תרגול</a> (התאים הצהובים ריקים) ו<a href="../../materials/lesson-6-summary.xlsx">קובץ סיכום ופתרונות</a>. כאן הפתרונות של התרגילים לתרגול עצמי:</p>
+<h3>הנקניק המהיר, 2021 ו-2022</h3><p>יתרת לקוחות ב-31.12.2020: 30,000 ש״ח, הלח״מ 5%. 2021: מכירות במזומן 300,000, באשראי 200,000, גבייה 180,000, שיעור 5%. 2022: מכירות 500,000 מתוכן 290,000 במזומן, גבייה 140,000, חוב אבוד 9,000, שיעור 7%.</p><details><summary>הצגת הפתרון</summary><div class="tw"><table class="res"><thead><tr><th></th><th>31.12.2021</th><th>31.12.2022</th></tr></thead><tbody><tr><td>לקוחות ברוטו</td><td><span class="n">50,000</span></td><td><span class="n">111,000</span></td></tr><tr><td>בניכוי הלח״מ</td><td><span class=n>(2,500)</span></td><td><span class=n>(7,770)</span></td></tr><tr class=tot><td><b>לקוחות נטו</b></td><td><span class="n">47,500</span></td><td><span class="n">103,230</span></td></tr><tr><td>הוצאות הלח״מ לשנה</td><td><span class="n">1,000</span></td><td><span class="n">14,270</span></td></tr></tbody></table></div></details>
+<h3>ניסיון הטמעה, 2020 ו-2021</h3><p>הוקמה ב-1.1.2020. 2020: מכירות באשראי 1,000,000, גבייה 900,000, שיעור 8%. 2021: מכירות באשראי 560,000, גבייה 180,000, חובות אבודים 2,000, שיעור 15%.</p><details><summary>הצגת הפתרון</summary><div class="tw"><table class="res"><thead><tr><th></th><th>31.12.2020</th><th>31.12.2021</th></tr></thead><tbody><tr><td>לקוחות ברוטו</td><td><span class="n">100,000</span></td><td><span class="n">478,000</span></td></tr><tr><td>בניכוי הלח״מ</td><td><span class=n>(8,000)</span></td><td><span class=n>(71,700)</span></td></tr><tr class=tot><td><b>לקוחות נטו</b></td><td><span class="n">92,000</span></td><td><span class="n">406,300</span></td></tr><tr><td>הוצאות הלח״מ לשנה</td><td><span class="n">8,000</span></td><td><span class="n">65,700</span></td></tr></tbody></table></div></details>
+<h3>תרגול עצמי 1</h3><p>לקוחות ב-31.12.2020: 40,000 ש״ח. שיעור קבוע 5%. 2021: מכירות באשראי 100,000, גבייה 80,000, חובות אבודים 1,000.</p><details><summary>הצגת הפתרון</summary><div class="tw"><table class="res"><thead><tr><th></th><th>31.12.2021</th></tr></thead><tbody><tr><td>לקוחות ברוטו</td><td><span class="n">59,000</span></td></tr><tr><td>בניכוי הלח״מ</td><td><span class=n>(2,950)</span></td></tr><tr class=tot><td><b>לקוחות נטו</b></td><td><span class="n">56,050</span></td></tr><tr><td>הוצאות הלח״מ לשנה</td><td><span class="n">1,950</span></td></tr></tbody></table></div></details>
+<h3>תרגול עצמי 2</h3><p>לקוחות ב-31.12.2020: 100,000 ש״ח, שיעור 5%. 2021: מכירות במזומן 60,000, באשראי 90,000, גבייה 40,000, חובות אבודים 4,000, שיעור ב-31.12.2021: 10%.</p><details><summary>הצגת הפתרון</summary><div class="tw"><table class="res"><thead><tr><th></th><th>31.12.2021</th></tr></thead><tbody><tr><td>לקוחות ברוטו</td><td><span class="n">146,000</span></td></tr><tr><td>בניכוי הלח״מ</td><td><span class=n>(14,600)</span></td></tr><tr class=tot><td><b>לקוחות נטו</b></td><td><span class="n">131,400</span></td></tr><tr><td>הוצאות הלח״מ לשנה</td><td><span class="n">13,600</span></td></tr></tbody></table></div></details>
+<h3>תרגול עצמי 3, מרגין</h3><p>הלח״מ ב-1.1.2012: 120,000. יתרה בספרים ב-31.12.2012: 2,000,000, חוב אבוד שלא נרשם 100,000, מכירה באשראי שלא נרשמה 200,000, שיעור 5%.</p><details><summary>הצגת הפתרון</summary><div class="tw"><table class="res"><thead><tr><th></th><th>31.12.2012</th></tr></thead><tbody><tr><td>לקוחות ברוטו</td><td><span class="n">2,100,000</span></td></tr><tr><td>בניכוי הלח״מ</td><td><span class=n>(105,000)</span></td></tr><tr class=tot><td><b>לקוחות נטו</b></td><td><span class="n">1,995,000</span></td></tr><tr><td>הוצאות הלח״מ לשנה</td><td><span class="n">85,000</span></td></tr></tbody></table></div></details>
+</section><section id="s11"><h2><span class="sn">11</span>שיעורי הבית</h2>
+<div class="note" style="background:#fff1e8;border-right-color:var(--coral)"><b>📝 להגשה: תרגילים 6.1, 6.2 ותרגיל חדש 6.3 (חברת ״מעדני העמק״).</b> <a href="../../materials/homework-lesson-6.pdf" target="_blank" rel="noopener"><b>תרגילי ההגשה של שיעור 6 (PDF, 3 עמודים)</b></a>. כדאי לפתור קודם את התרגילים המקבילים בחוברת, 6.1 עד 6.9, ולבדוק אותם בפתרונות המלאים.<br><b>פתרונות.</b> פתרונות לתרגילי הבית לא יפורסמו באתר, למעט מה שהמתרגלים מציגים. מי שרוצה לתרגל עוד ימצא תרגילים דומים רבים מאוד <a href="../../materials/exercise-booklet.pdf#page=47" target="_blank" rel="noopener"><b>בחוברת התרגילים שבאתר</b></a>, עם פתרונות מלאים.<br><b>איך מגישים.</b> את הפתרון מגישים בתיבת ההגשה שפתחו המתרגלים באתרים שלהם. אם לא ברור איפה התיבה או איך מגישים, פנו אל המתרגלים ושאלו אותם אם יש בעיה טכנית בצד שלהם.</div>
+<div class="note">בשיעור הבא ממשיכים לתרגל לקוחות והלח״מ, ברמת מבחן.</div>
+</section><footer>ד״ר שי צבאן · המכללה האקדמית עמק יזרעאל · סמסטר א׳ תשפ״ז</footer></div>
+</body>
+</html>

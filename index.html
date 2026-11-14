@@ -73,6 +73,12 @@ h2.sec:before{content:"";width:34px;height:5px;border-radius:5px;background:var(
 .lk .ar{margin-right:auto;color:var(--coral);font-weight:800;font-size:20px}
 .lk.p .e{background:#ffe3dc}.lk.s .e{background:#dff5f2}.lk.r .e{background:#ece8ff}
 
+/* a highlighted interactive deck link */
+.lk.d{background:linear-gradient(135deg,#1b2d55,#27447f);color:#fff;border-color:transparent}
+.lk.d .e{background:rgba(255,255,255,.16)}.lk.d .d{color:#c8d4f2}.lk.d .ar{color:#7fe3d6}
+.lk.x .e{background:#dcf5e6}
+.basis{margin:0 30px 18px;background:#eef2ff;border-right:5px solid #1b2d55;border-radius:12px;padding:10px 16px;font-size:16.5px;color:var(--ink2)}
+@media (max-width:760px){.basis{margin:0 22px 18px}}
 /* homework submission box inside a lecture card */
 .hwsub{margin:0 30px 26px;background:linear-gradient(135deg,#fff3e8,#ffe9dc);border:2px solid var(--coral);border-radius:18px;padding:20px 24px;display:flex;gap:18px;align-items:flex-start}
 .hwsub .ic{font-size:40px;line-height:1;flex:none}
@@ -496,6 +502,84 @@ footer{margin-top:60px;background:var(--navy);color:#c8d4f2;padding:40px 0}
       <div class="rec" id="recording-5">
         <div class="recbox" id="recbox5">
           <div class="recph"><div><div class="big">🎥</div><b>ההקלטה תתווסף כאן</b></div></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="lec" id="lecture-6">
+      <div class="lec-head">
+        <div class="lec-n">6</div>
+        <div>
+          <h3>לקוחות, הלח״מ וחובות אבודים</h3>
+          <div class="sub">18.11.2026 · מכירות באשראי וגבייה, הפרשה לחובות מסופקים, לקוחות נטו, הוצאות הלח״מ וחובות אבודים</div>
+        </div>
+      </div>
+      <div class="lec-body">
+        <div>
+          <h4>מה לומדים בשיעור</h4>
+          <ul class="learn">
+            <li><b>לקוחות, מאפס.</b> מכירה באשראי מגדילה את הלקוחות, גבייה מקטינה אותם, ומכירה במזומן לא נוגעת בהם. כרטיס הלקוחות: חובה וזכות.</li>
+            <li><b>הלח״מ: הפרשה לחובות מסופקים.</b> החלק מהחוב שכנראה לא ייגבה, כאחוז מהלקוחות ברוטו. בדוח על המצב הכספי מוצגים לקוחות נטו: ברוטו פחות הלח״מ.</li>
+            <li><b>הוצאות הלח״מ.</b> ההוצאה של השנה בדוח רווח והפסד. בשנה הראשונה היא שווה ליתרת ההלח״מ, ומהשנה השנייה מחלצים אותה כערך משלים.</li>
+            <li><b>חובות אבודים.</b> חוב שברור שלא ייגבה נמחק מהלקוחות ומההלח״מ. ברגע המחיקה לקוחות נטו והרווח לא משתנים.</li>
+            <li><b>וריאציות.</b> יתרת לקוחות נתונה בלי נתוני מכירות, ויתרה מהספרים שדורשת תיקון.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>חומרי השיעור</h4>
+          <div class="links">
+            <a class="lk d" href="lectures/lecture-6/presentation.html" target="_blank" rel="noopener">
+              <div class="e">🖥️</div>
+              <div><b>המצגת האינטרקטיבית של השיעור</b><span class="d">46 שקפים, 13 גיליונות Excel חיים, נתונים שעפים לכרטיסים, ותרגול הדרגתי</span></div>
+              <span class="ar">←</span>
+            </a>
+            <a class="lk s" href="lectures/lecture-6/notes.html" target="_blank" rel="noopener">
+              <div class="e">📄</div>
+              <div><b>סיכום השיעור והמושגים</b><span class="d">כולל חובות אבודים, תבנית העבודה ופתרונות לתרגול העצמי</span></div>
+              <span class="ar">←</span>
+            </a>
+            <a class="lk x" href="materials/lesson-6-summary.xlsx">
+              <div class="e">📊</div>
+              <div><b>סיכום השיעור ב-Excel</b><span class="d">מושגים, תבנית העבודה וכל תרגילי השיעור פתורים בנוסחאות חיות</span></div>
+              <span class="ar">↓</span>
+            </a>
+            <a class="lk x" href="materials/lesson-6-practice.xlsx">
+              <div class="e">✏️</div>
+              <div><b>קובץ תרגול ב-Excel</b><span class="d">אותם גיליונות, עם התאים לפתרון ריקים</span></div>
+              <span class="ar">↓</span>
+            </a>
+            <a class="lk r" href="#recording-6">
+              <div class="e">🎥</div>
+              <div><b>הקלטת השיעור</b><span class="d">תתווסף אחרי השיעור, מיד מתחת</span></div>
+              <span class="ar">↓</span>
+            </a>
+            <a class="lk p" href="materials/exercise-booklet.pdf#page=47" target="_blank" rel="noopener">
+              <div class="e">✍️</div>
+              <div><b>תרגילי שיעור 6 בחוברת</b><span class="d">מעמוד 47, ובחוברת הפתרונות (עמוד 134 ואילך) הפתרון לאחר ניסיון עצמאי</span></div>
+              <span class="ar">←</span>
+            </a>
+            <a class="lk p" href="#homework-6">
+              <div class="e">📝</div>
+              <div><b>תרגילי בית להגשה: 6.1, 6.2 ו-6.3</b><span class="d">6.3 הוא תרגיל חדש. המקטע להגשה מצורף מתחת</span></div>
+              <span class="ar">↓</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="basis">השיעור נשען לגמרי על מחברת הקורס (גיליון ״6 - הרצאה״), אבל לאור מרכזיות הנושא הוא מונגש באופן אינטרקטיבי מושקע יותר: מצגת עם תרגול הדרגתי באקסל, סיכום מושגים וסיכום באקסל. בשיעור הבא נמשיך לתרגל לקוחות ברמת מבחן.</div>
+      <div class="hwsub" id="homework-6">
+        <div class="ic">📝</div>
+        <div>
+          <h4>שימו לב: יש תרגילי בית להגשה בנושא לקוחות והלח״מ</h4>
+          <p>לשיעור הזה יש שלושה תרגילי בית להגשה: תרגילים 6.1 ו-6.2 מחוברת תרגילי הבית, ותרגיל חדש, 6.3, חברת ״מעדני העמק״. שלושתם בקובץ אחד.</p>
+          <a class="go" href="materials/homework-lesson-6.pdf" target="_blank" rel="noopener">פתיחת תרגילי ההגשה של שיעור 6 <small>PDF · 3 עמודים</small></a>
+          <p><b>פתרונות.</b> פתרונות לתרגילי הבית לא יפורסמו באתר, למעט מה שהמתרגלים מציגים. מי שרוצה לתרגל עוד ימצא תרגילים דומים רבים מאוד <a href="materials/exercise-booklet.pdf#page=47" target="_blank" rel="noopener"><b>בחוברת התרגילים שבאתר</b></a>, עם פתרונות מלאים.</p>
+          <div class="how"><b>איך מגישים.</b> את הפתרון מגישים בתיבת ההגשה שפתחו המתרגלים באתרים שלהם. אם לא ברור איפה התיבה או איך מגישים, פנו אל המתרגלים ושאלו אותם אם יש בעיה טכנית בצד שלהם.</div>
+        </div>
+      </div>
+      <div class="rec" id="recording-6">
+        <div class="recbox" id="recbox6">
+          <div class="recph"><div><div class="big">🎥</div><b>ההקלטה תתווסף כאן</b>אחרי השיעור ב-18.11.2026</div></div>
         </div>
       </div>
     </article>
